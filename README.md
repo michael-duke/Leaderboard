@@ -1,41 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+# Leaderboard
+![app-logo](https://user-images.githubusercontent.com/84629565/186024152-a8df92c6-804a-40bd-a0ee-82b41c29e25d.jpg)
+> The goal of this educational project is to create a website that displays the scores submitted by various players. You can also submit your score here. The external Leaderboard API Service ensures that all data is preserved. Webpack, API, Tailwind CSS,HTML5, and JavaScript were used to create this site.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, Tailwind CSS, JavaScript
+- Webpack, Linters (Stylelint, Webhint, ESlint)
+- Testing: Jest
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+:smile: not yet
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
+To get a local copy up and running follow these simple steps.
 ### Usage
-
-### Run tests
-
-### Deployment
-
+Run `npm i` then `npm run start` or `npm run build` to see the project
 
 
 ## Authors
@@ -45,13 +30,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@michael-duke](https://github.com/michael-duke)
 - Twitter: [@MikeDuke21](https://twitter.com/MikeDuke21)
 - LinkedIn: [MICHAEL MESFIN](https://linkedin.com/in/https://www.linkedin.com/in/michael-21-duke/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
 
 ## 🤝 Contributing
 
