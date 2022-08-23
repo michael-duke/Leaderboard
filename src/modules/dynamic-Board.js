@@ -29,7 +29,7 @@ export default class DynamicBoard {
       const { name, points } = score;
 
       const scoreMsg = document.createElement('h3');
-      scoreMsg.classList = 'ml-3 even:bg-gray-300';
+      scoreMsg.classList = 'pl-3 even:bg-gray-300';
       scoreMsg.innerText = `${name} :`;
 
       const pointsScored = document.createElement('span');
