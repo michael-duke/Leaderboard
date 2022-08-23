@@ -10,6 +10,7 @@ export class LeaderBoard {
 
   addScore(score) {
     this.scores.push(score);
+    this.sortScores();
     this.saveLeaderboard();
     dynamicBoard.render(this.scores);
   }
@@ -18,6 +19,15 @@ export class LeaderBoard {
     this.scores = [];
     this.saveLeaderboard();
     dynamicBoard.renderEmptyMessage();
+  }
+
+  sortScores() {
+    this.scores = this.scores
+      .sort((a, b) => b.points - a.points)
+      .map((score, index) => {
+        score.id = index + 1;
+        return score;
+      });
   }
 
   getInput() {
