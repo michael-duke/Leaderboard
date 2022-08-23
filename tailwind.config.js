@@ -6,9 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['COCOGOOSE', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
         nunito: ['nunito', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+      },
+      screens: {
+        sm: { max: '768px' },
+        ms: { max: '1212px' },
       },
       colors: {
       },
