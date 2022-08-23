@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-:smile: not yet
+:smile: not yet but try [this](https://michael-duke.github.io/Leaderboard/)
 
 
 ## Getting Started
