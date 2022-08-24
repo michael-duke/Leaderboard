@@ -4,3 +4,5 @@ node_modules/
 .vscode
 #Distribution directory from Webpack
 dist/
+#REST Client API Test
+request.http
