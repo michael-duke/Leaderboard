@@ -1,3 +1,5 @@
+import trophyIcon from '../assets/icons/trophy-icon.png';
+
 export default class DynamicBoard {
   constructor() {
     this.messageOn = false;
@@ -30,13 +32,22 @@ export default class DynamicBoard {
       const { id, name, points } = score;
 
       const scoreMsg = document.createElement('h3');
-      scoreMsg.classList = 'pl-3 even:bg-gray-300 even:text-black first:text-yellow-400 first:font-bold text-white';
+      scoreMsg.classList = 'pl-2 rounded hover:scale-125 cursor-pointer even:bg-gray-300 even:text-black first:text-yellow-400 first:font-bold text-white';
       scoreMsg.innerHTML = `<strong>${id}. </strong> ${name} :`;
 
       const pointsScored = document.createElement('span');
       pointsScored.classList = 'ml-2';
       pointsScored.textContent = points;
+
       scoreMsg.appendChild(pointsScored);
+
+      if (id === 1) {
+        const trophy = document.createElement('img');
+        trophy.classList = 'w-10 h-10 animate-wiggle';
+        trophy.src = trophyIcon;
+        scoreMsg.classList.add('flex', 'items-center');
+        scoreMsg.appendChild(trophy);
+      }
 
       scoreBoard.appendChild(scoreMsg);
     });

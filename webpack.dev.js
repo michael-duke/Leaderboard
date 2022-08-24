@@ -11,7 +11,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'MicroTasks',
+      title: 'Leaderboard',
       template: './src/template.html',
     }),
   ],
