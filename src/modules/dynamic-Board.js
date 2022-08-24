@@ -9,10 +9,11 @@ export default class DynamicBoard {
 
     const message = document.createElement('span');
     message.innerText = 'No winners yet in the Leaderboard. ';
-    message.className = 'empty-message italic';
+    message.className = 'empty-message italic text-white';
 
     const smileyFace = document.createElement('span');
     smileyFace.innerText = '😄 Go to Add score, or hit Refresh';
+    smileyFace.className = 'text-white';
 
     scoreDisplay.append(message, smileyFace);
   }
@@ -29,7 +30,7 @@ export default class DynamicBoard {
       const { id, name, points } = score;
 
       const scoreMsg = document.createElement('h3');
-      scoreMsg.classList = 'pl-3 even:bg-gray-300';
+      scoreMsg.classList = 'pl-3 even:bg-gray-300 even:text-black first:text-yellow-400 first:font-bold text-white';
       scoreMsg.innerHTML = `<strong>${id}. </strong> ${name} :`;
 
       const pointsScored = document.createElement('span');

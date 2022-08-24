@@ -16,6 +16,10 @@ html {
   transition-duration: 0.25s;
 }
 
+body {
+  background-color: #40403f;
+}
+
 /* Scrollbar section */
 ::-webkit-scrollbar {
   width: 0.5625rem;

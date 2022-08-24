@@ -15,6 +15,8 @@ module.exports = {
         ms: { max: '1212px' },
       },
       colors: {
+        'goldy-gold': '#e5cf8a',
+        'regal-gold': '#cbb26b',
       },
     },
   },
