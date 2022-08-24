@@ -1,4 +1,5 @@
 import trophyIcon from '../assets/icons/trophy-icon.png';
+
 export default class DynamicBoard {
   constructor() {
     this.messageOn = false;
@@ -40,12 +41,12 @@ export default class DynamicBoard {
 
       scoreMsg.appendChild(pointsScored);
 
-      if(id === 1){
+      if (id === 1) {
         const trophy = document.createElement('img');
-        trophy.classList = `w-10 h-10 animate-wiggle`
+        trophy.classList = 'w-10 h-10 animate-wiggle';
         trophy.src = trophyIcon;
-        scoreMsg.classList.add('flex', 'items-center')
-        scoreMsg.appendChild(trophy)
+        scoreMsg.classList.add('flex', 'items-center');
+        scoreMsg.appendChild(trophy);
       }
 
       scoreBoard.appendChild(scoreMsg);
