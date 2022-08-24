@@ -31,15 +31,14 @@ export class LeaderBoard {
   };
 
   refreshFromAPI = async () => {
-    const scores = await fetch(`${this.url}scores/`)
-      .then((response) => response.json())
-      .then(({ result }) => result.map(({ score: points, user: name }) => ({
-        name,
-        points,
-      })));
-
+    const scoreData = await fetch(`${this.url}scores/`);
+    const { result } = await scoreData.json();
+    const scores = result.map(({ score: points, user: name }) => ({
+      name,
+      points,
+    }));
     return scores;
-  }
+  };
 
   sortScores() {
     this.scores = this.scores
