@@ -32,8 +32,10 @@ export default class DynamicBoard {
       const { id, name, points } = score;
 
       const scoreMsg = document.createElement('h3');
-      scoreMsg.classList = 'pl-2 rounded hover:scale-125 cursor-pointer even:bg-gray-300 even:text-black first:text-yellow-400 first:font-bold text-white';
-      scoreMsg.innerHTML = `<strong>${id}. </strong> ${name} :`;
+      scoreMsg.classList =
+        'pl-2 rounded hover:scale-125 cursor-pointer even:bg-gray-300 even:text-black first:text-yellow-400 first:font-bold text-white whitespace-nowrap';
+      scoreMsg.innerHTML = `<strong>${id}. </strong> 
+      <span>${name} :</span?`;
 
       const pointsScored = document.createElement('span');
       pointsScored.classList = 'ml-2';
